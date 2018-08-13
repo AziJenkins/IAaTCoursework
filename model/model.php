@@ -93,6 +93,7 @@ class Model
         $stmnt->execute([$name, $category, $date, $description, $organiser, $venue, $image, 1]);
         $stmnt2 = $this->pdo->prepare("INSERT INTO usereventmap (user, eventname, datetime, isorganising) VALUES (?,?,?,?)");
         $stmnt2->execute([$_COOKIE["user"], $name, $date, 1]);
+        $_POST["created"] == null;
     }
 
     public function login()

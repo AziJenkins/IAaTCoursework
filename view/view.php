@@ -68,9 +68,9 @@ class View
         echo "<div id=\"column\">Category: <select name=\"Category\">";
         echo "<option value=\"Sport\">Sport</option>";
         echo "<option value=\"Culture\">Arts</option>";
-        echo "<option value=\"Others\">Science</option>";
+        echo "<option value=\"Others\">Others</option>";
         echo "</select></div>";
-        echo "<div id=\"column\">Date and time: <input type=\"datetime\" name=\"Date\" /></div>";
+        echo "<div id=\"column\">Date and time: <input type=\"datetime\" name=\"Date\" value=\"YYYY-MM-DD HH:MI:SS\"/></div>";
         echo "<div id=\"column\">Description: <input type=\"text\" name=\"Description\"></div>";
         echo "<div id=\"column\">Venue: <input type=\"text\" name=\"Venue\" /></div>";
         echo "<div id=\"column\">Image: <input type=\"image\" name=\"Image\" /></div>";
