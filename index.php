@@ -36,7 +36,7 @@ error_reporting(E_ALL | E_STRICT); ?>
     <?php $controller->view->displayFilter();?>
   </div>
   <div id="createEvent"> <?php
-    if (isset($_POST["created"])) {
+    if (isset($_POST["created"]) && $_POST["created"] != null) {
         $controller->model->createEvent();
         echo "<h3>Event Successfully Created</h3>";
     }
