@@ -5,10 +5,10 @@ if (isset($_POST["register"])) {
     $controller->model->register();
     if (isset($_POST["Success"])) {
         echo "Success. Please login";
-        echo "<a href=\"astonevents.php\">Home</a>";
+        echo "<a href=\"index.php\">Home</a>";
     } else {
         echo "Failed";
-        echo "<a href=\"astonevents.php\">Home</a>";
+        echo "<a href=\"index.php\">Home</a>";
     }
 } else {
     ?>
