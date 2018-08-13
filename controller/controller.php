@@ -12,7 +12,7 @@ error_reporting(E_ALL | E_STRICT);
       public function __construct()
       {
           $this->test = "yes";
-          $this->model = new Model("127.0.0.1", "astonevents", "guest", "password");
+          $this->model = new Model("sql2.freemysqlhosting.net", "sql2251850", "sql2251850", "sX9%pR4!");
           $this->model->establishConnection();
           $this->view = new View($this->model);
       }

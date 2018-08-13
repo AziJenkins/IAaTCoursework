@@ -33,7 +33,7 @@ class View
             }
 
             if (!isset($_REQUEST['event']) or $_REQUEST['event'] != $name) {
-                echo "<form name=\"interest\" method=\"post\" action=\"astonevents.php\">";
+                echo "<form name=\"interest\" method=\"post\" action=\"index.php\">";
                 echo "<input type=\"submit\" name=\"showInterest\" value=\"Show Interest\" />";
                 echo "<input type=\"hidden\" name=\"event\" value=\"$name\">";
                 echo "</form>";
@@ -50,7 +50,7 @@ class View
     public function displayLogin()
     {
         if (!isset($_POST["isSubmitted"])) {
-            echo "<form method=\"post\" action=\"astonevents.php\">";
+            echo "<form method=\"post\" action=\"index.php\">";
             echo "Username: <input type=\"text\" name=\"uname\" id=\"uname\"/>";
             echo "Password: <input type=\"password\" name=\"pword\" id=\"pword\"/>";
             echo "<input type=\"submit\" name=\"btnLogin\"  value=\"Login\"/>";
@@ -63,7 +63,7 @@ class View
 
     public function displayCreateForm()
     {
-        echo "<form method=\"post\" action=\"astonevents.php\" id=\"create\">";
+        echo "<form method=\"post\" action=\"index.php\" id=\"create\">";
         echo "<div id=\"column\">Event name: <input type=\"text\" name=\"ename\" /></div>";
         echo "<div id=\"column\">Category: <select name=\"Category\">";
         echo "<option value=\"Sport\">Sport</option>";
@@ -81,7 +81,7 @@ class View
 
     public function displayFilter()
     {
-        echo "<form method=\"get\" id=\"filter\" action=\"astonevents.php\">";
+        echo "<form method=\"get\" id=\"filter\" action=\"index.php\">";
         echo "<select name=\"order\">";
         echo "<option value=\"datetime\">Date/Time</option>";
         echo "<option value=\"popularity\">Popularity</option>";
