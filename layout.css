@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+  display: block;
+}
+
+#feed {
+  width: 74%;
+  float: left;
+}
+
+#sidebar {
+  width: 25%;
+  float: left;
+}
+
+#create #column{
+  display: block;
+}
+
+#event {
+  border: 2px solid black;
+  text-align: center;
+}
